@@ -1,0 +1,19 @@
+<h1>This is the ex of the stateFull Services</h1>
+<p>a services which can store a data and will display that data at a time to every component</p>
+<h1>{{ update.count() }}</h1>
+
+<app-statechild1></app-statechild1>
+<app-statechild2></app-statechild2>
+<app-statechild3></app-statechild3>
+
+<button (click)="update.increment()">Increment</button>
+<button (click)="update.decrement()">Decrement</button>
+<br /><br />
+<button (click)="count.increment()">
+  <h1>Increment: {{ count.count }}</h1>
+</button>
+<button (click)="count.decrement()">
+  <h1>Decrement: {{ count.count }}</h1>
+</button>
+
+<!-- <button (click)="pay()">make a payment</button> -->

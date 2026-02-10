@@ -1,0 +1,16 @@
+<h1>attribute-directive works!</h1>
+<p
+  [ngClass]="{
+    active: green,
+    dark: dark,
+  }"
+>
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis fugiat alias, saepe expedita
+  iste similique deleniti sed provident, delectus eum aliquam adipisci ratione corporis? Dolores
+  maxime numquam a deleniti harum.
+</p>
+
+<button [ngStyle]="{ width: width, color: color, height: heightCal }" (click)="Change()">
+  Change
+</button>
+<app-child></app-child>
