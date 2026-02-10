@@ -1,0 +1,11 @@
+:host {
+  background-color: red;
+  display: block;
+}
+
+
+
+p {
+  background-color: var(--primary-color);
+  color: var(--primary-color);
+}

@@ -1,0 +1,15 @@
+<p>pipe works!</p>
+<h1>{{ date | date: 'short' | uppercase }}</h1>
+<h1>{{ salary | currency: 'USD' }}</h1>
+
+<h1>Decimal Num : {{ salary | number: '1.0-0' }}</h1>
+
+<h1>{{ user | slice: 0 : 5 }}</h1>
+<h1>User Data {{ userData.salary | currency: 'INR' | json }}</h1>
+<h1>Custom Pipe: {{ user | cap }}</h1>
+
+<h1>{{ count | multi: 2 }}</h1>
+<button (click)="count = count + 1">increment</button>
+<button (click)="count = count">no Change</button>
+
+<h1>Total: {{ nums | reduce }}</h1>
