@@ -13,11 +13,8 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-<<<<<<< HEAD
+
   imports: [RouterOutlet],
-=======
-  imports: [],
->>>>>>> 666e3f74d7d0eb787fb517d1d0694870b7b3319a
   templateUrl: './app.html',
   styleUrl: './app.css',
   // encapsulation: ViewEncapsulation.None,
