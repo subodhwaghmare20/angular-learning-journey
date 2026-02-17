@@ -3,12 +3,13 @@ import { Home } from './routing/home/home';
 import { About } from './routing/about/about';
 import { Routing } from './routing/routing';
 import { Contact } from './routing/contact/contact';
+import { ErrorHandler } from './routing/error-handler/error-handler';
 
 export const routes: Routes = [
   {
     path: '',
     component: Routing,
-    // pathMatch: 'full',
+    pathMatch: 'full',
   },
   {
     path: 'home',
@@ -22,5 +23,12 @@ export const routes: Routes = [
   {
     path: 'contact',
     component: Contact,
+    // redirectTo: 'Contact',
+    // pathMatch: 'full',
+  },
+  {
+    path: '**',
+    component: ErrorHandler,
+    pathMatch: 'full',
   },
 ];
