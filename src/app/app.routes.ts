@@ -14,7 +14,10 @@ export const routes: Routes = [
   {
     path: 'home',
     component: Home,
-    children: [{ path: 'contact', component: Contact }],
+    children: [
+      { path: 'contact', component: Contact },
+      { path: 'about', component: About },
+    ],
   },
   {
     path: 'about',
@@ -25,6 +28,12 @@ export const routes: Routes = [
     component: Contact,
     // redirectTo: 'Contact',
     // pathMatch: 'full',
+  },
+  {
+    path: 'communication',
+    loadComponent() {
+      return import('./communication/communication').then((m) => m.Communication);
+    },
   },
   {
     path: '**',
