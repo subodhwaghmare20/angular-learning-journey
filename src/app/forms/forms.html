@@ -1,0 +1,53 @@
+<!-- <h1>forms works!</h1>
+
+<input #val type="text" value="userData" [(ngModel)]="user" />
+
+<h1>
+  this is data Stored in user:
+  <span style="background-color: red; border-radius: 20px; color: white; display: inline-block">{{
+    user
+  }}</span>
+</h1> -->
+
+<h1>LogIn Form!...</h1>
+<!--
+<form action="" #logInForm="ngForm" (ngSubmit)="onSubmit(logInForm)">
+  <label>Username</label>
+  <input type="text" name="username" [(ngModel)]="username" required />
+  <label>Password</label>
+  <input type="password" name="password" [(ngModel)]="password" required />
+
+  <button type="submit">Submit</button>
+</form> -->
+
+<!-- <form action="" #loginForm="ngForm" (ngSubmit)="handle()">
+  <input
+    type="text"
+    name="username"
+    [(ngModel)]="username"
+    required
+    minlength="3"
+    #usernameRef="ngModel"
+  />
+
+  @if (usernameRef.invalid && usernameRef.touched) {
+    @if (usernameRef.errors?.['required']) {
+      <p>Username is Required</p>
+    }
+    @if (usernameRef.errors?.['minlength']) {
+      <p>Minimum 3 char required</p>
+    }
+  }
+
+  <br /><br />
+  <button type="submit">Submit...</button>
+</form> -->
+
+<form action="" (ngSubmit)="handle(formAction)" #formAction="ngForm">
+  @for (item of gender; track $index) {
+    <label [for]="item.id">{{ item.display }}</label>
+    <input type="radio" name="Gender" [value]="item.gender" [id]="item.id" ngModel />
+  }
+  <h2>Display: {{ display | json }}</h2>
+  <button type="submit">save</button>
+</form>

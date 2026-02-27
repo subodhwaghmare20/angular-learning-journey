@@ -10,11 +10,12 @@ import { Statefulcheck } from './statefulcheck/statefulcheck';
 import { Routing } from './routing/routing';
 // import { RouterOutlet } from '../../node_modules/@angular/router/types/_router_module-chunk';
 import { RouterOutlet } from '@angular/router';
+import { Forms } from './forms/forms';
 
 @Component({
   selector: 'app-root',
 
-  imports: [RouterOutlet],
+  imports: [Forms],
   templateUrl: './app.html',
   styleUrl: './app.css',
   // encapsulation: ViewEncapsulation.None,
