@@ -1,0 +1,89 @@
+<!-- <h2>reactive-forms works!</h2>
+
+<form (ngSubmit)="handle()" [formGroup]="logInForm">
+  <label for="email">Email:</label><br />
+  <input type="text" name="email" id="email" formControlName="email" /><br /><br />
+
+  <label for="password">Password:</label><br />
+  <input type="text" formControlName="password" name="password" id="password" />
+  <br /><br />
+  <button type="button" (click)="fillData()">AutoFill</button><br /><br />
+
+  <input type="submit" name="submit" id="submit" [disabled]="logInForm.invalid" />
+</form> -->
+<!--
+<h2>Password confirmation</h2>
+
+<form action="" [formGroup]="conPassword">
+  <label for="NewPassword">New Password:</label>
+  <input type="text" formControlName="newPass" name="NewPassword" id="NewPassword" /><br /><br />
+  <label for="confirm">Confirm Password</label>
+  <input type="text" formControlName="confirmPassword" name="confirm" id="confirm" />
+  <br /><br />
+
+  @if (!passwordMatch() && conPassword.dirty) {
+    <p>Password Do not match</p>
+  }
+  @if (!conPassword.dirty && passwordMatch()) {
+    <p>password is matching</p>
+  }
+</form> -->
+
+<!-- ! Nested Form Group -->
+
+<!-- <form action="" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <div formGroupName="personalInfo">
+    <label for="firstName">FirstName</label>
+    <input type="text" name="firstName" id="firstName" formControlName="firstName" />
+    <label for="lastName">LastName</label>
+    <input type="text" formControlName="lastName" name="lastName" id="lastName" />
+  </div>
+  <div formGroupName="contactInfo">
+    <label for="email">Email:</label>
+    <input type="text" name="email" id="email" formControlName="email" />
+    <label for="phone">Phone</label>
+    <input type="text" formControlName="phone" name="phone" id="phone" />
+  </div>
+  <button type="submit" [disabled]="profileForm.invalid">Submit</button>
+</form> -->
+
+<!-- <form action="" [formGroup]="field">
+  <input type="text" />
+</form> -->
+
+<!-- <input type="text" [formControl]="user" name="" id="" />
+
+<p>Value: {{ user.value }}</p>
+<p>Status: {{ user.status }}</p>
+<p>Valid: {{ user.valid }}</p>
+<p>InValid: {{ user.invalid }}</p>
+<p>Errors: {{ user.errors | json }}</p>
+<hr />
+<button (click)="disableField()" type="button">DisableField</button><br /><br />
+<button type="button" (click)="enableField()">EnableField</button> -->
+
+<!-- ! FormArray -->
+
+<!-- <form action="" [formGroup]="profileForm">
+  <div formArrayName="skills">
+    @for (skill of skills.controls; track $index) {
+      <div>
+        <input [formControlName]="$index" />
+        <button type="button" (click)="removeSkill($index)">Remove</button>
+        <h1>{{ skill | json }}</h1>
+      </div>
+    }
+  </div>
+</form>
+
+<button type="button" (click)="addSkill()">Add Skill</button>
+
+<p>{{ profileForm.value | json }}</p> -->
+
+<!--! FormBuilder -->
+
+<form action="" (ngSubmit)="onSubmit()" [formGroup]="userProfile">
+  <input type="text" formControlName="email" name="" id="" />
+  <input type="text" formControlName="password" name="" id="" />
+  <button type="submit">Submit</button>
+</form>

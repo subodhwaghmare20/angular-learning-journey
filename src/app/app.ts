@@ -11,11 +11,12 @@ import { Routing } from './routing/routing';
 // import { RouterOutlet } from '../../node_modules/@angular/router/types/_router_module-chunk';
 import { RouterOutlet } from '@angular/router';
 import { Forms } from './forms/forms';
+import { Observable } from './observable/observable';
 
 @Component({
   selector: 'app-root',
 
-  imports: [Forms],
+  imports: [Observable],
   templateUrl: './app.html',
   styleUrl: './app.css',
   // encapsulation: ViewEncapsulation.None,

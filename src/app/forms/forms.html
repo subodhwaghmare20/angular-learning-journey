@@ -43,11 +43,13 @@
   <button type="submit">Submit...</button>
 </form> -->
 
-<form action="" (ngSubmit)="handle(formAction)" #formAction="ngForm">
+<!-- <form action="" (ngSubmit)="handle(formAction)" #formAction="ngForm">
   @for (item of gender; track $index) {
     <label [for]="item.id">{{ item.display }}</label>
     <input type="radio" name="Gender" [value]="item.gender" [id]="item.id" ngModel />
   }
   <h2>Display: {{ display | json }}</h2>
   <button type="submit">save</button>
-</form>
+</form> -->
+
+<app-reactive-forms></app-reactive-forms>
