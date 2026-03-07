@@ -5,11 +5,13 @@ import { routes } from './app.routes';
 import { MainMessage } from './shared/Services/main-message';
 import { MockMessage } from './shared/Services/mock-message';
 import { APP_CONFIG } from './shared/Token/inject.Token';
+import { provideHttpClient } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes),
+    provideHttpClient(),
     // { provide: MainMessage, useClass: MockMessage },
     // {
     //   provide: APP_CONFIG,

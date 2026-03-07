@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { numberObservable } from '../shared/Observable/observable-basic';
 import { dataObservable } from '../shared/Observable/of-observable';
 
@@ -7,6 +7,7 @@ import { dataObservable } from '../shared/Observable/of-observable';
   imports: [],
   templateUrl: './observable.html',
   styleUrl: './observable.css',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Observable implements OnInit {
   // ngOnInit(): void {

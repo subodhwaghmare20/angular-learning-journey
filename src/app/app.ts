@@ -12,11 +12,12 @@ import { Routing } from './routing/routing';
 import { RouterOutlet } from '@angular/router';
 import { Forms } from './forms/forms';
 import { Observable } from './observable/observable';
+import { HTTPAPI } from './http-api/http-api';
 
 @Component({
   selector: 'app-root',
 
-  imports: [Observable],
+  imports: [HTTPAPI],
   templateUrl: './app.html',
   styleUrl: './app.css',
   // encapsulation: ViewEncapsulation.None,
